@@ -65,7 +65,7 @@ window.onload = async function() {
   var canvas = document.getElementById('canvas');
   var context = canvas.getContext('2d');
   var tracker = new tracking.ObjectTracker('face');
-  var model = await tf.loadLayersModel("model/model_3.json");
+  var model = await tf.loadLayersModel("model/mymodel.json");
   var emoji_p = document.getElementById("emoji");
   tracker.setInitialScale(4);
   tracker.setStepSize(2);
